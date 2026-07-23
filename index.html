@@ -66,9 +66,10 @@
   .grid{display:grid;gap:20px;}
   .g3{grid-template-columns:repeat(3,1fr);}
   .g4{grid-template-columns:repeat(4,1fr);}
+  .g5{grid-template-columns:repeat(5,1fr);}
   .g2{grid-template-columns:repeat(2,1fr);}
-  @media(max-width:900px){.g3,.g4{grid-template-columns:repeat(2,1fr);}}
-  @media(max-width:600px){.g3,.g4,.g2{grid-template-columns:1fr;}}
+  @media(max-width:900px){.g3,.g4,.g5{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:600px){.g3,.g4,.g5,.g2{grid-template-columns:1fr;}}
 
   .card{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--petrol);
     border-radius:8px;padding:22px;}
@@ -318,17 +319,23 @@
   <div class="wrap">
     <span class="pill">Sessionen</span>
     <h2>Sådan forløber en session</h2>
-    <p class="lead">En VR ITA-session er bygget som et komplet læringsforløb — fra briefing til
-       fælles refleksion — og kan gennemføres på under en time.</p>
-    <div class="grid g4">
-      <div class="step"><span class="n">1</span><div class="t">10 min</div>
-        <h3>Oplæg</h3><p>Baggrund, formål og læringsmål for dagens scenarie.</p></div>
-      <div class="step"><span class="n">2</span><div class="t">15 min</div>
-        <h3>Introduktion til headset</h3><p>Navigér i VR-miljøet inden scenariet — ingen forudsætninger kræves.</p></div>
-      <div class="step"><span class="n">3</span><div class="t">20–30 min</div>
-        <h3>VR ITA-scenariet</h3><p>Mød din patient — observér, reagér og beslut. Alle handlinger logges.</p></div>
-      <div class="step"><span class="n">4</span><div class="t">10 min</div>
-        <h3>Debriefing</h3><p>Fælles refleksion over scenariet med automatisk evaluering som afsæt.</p></div>
+    <p class="lead">En session kræver ingen underviser — brugeren gennemfører den på egen hånd,
+       når det passer ind i vagten. Headsettet ligger klar på afdelingen.</p>
+    <div class="grid g5">
+      <div class="step"><span class="n">1</span>
+        <h3>Tag headsettet på</h3><p>Brugeren tager headsettet på og åbner appen VR ITA.</p></div>
+      <div class="step"><span class="n">2</span>
+        <h3>Vælg modul</h3><p>Nogle moduler starter med et lille teorioplæg — fuld skala-simulation
+        med en sygehistorie. Efter introduktionen trykker man START.</p></div>
+      <div class="step"><span class="n">3</span>
+        <h3>Gennemfør scenariet</h3><p>Scenariet er aktivt, og brugeren skal udføre en række
+        interventioner.</p></div>
+      <div class="step"><span class="n">4</span>
+        <h3>Evaluering</h3><p>Når scenariet er gennemført, fremkommer en evalueringstekst med
+        gennemgang af handlingerne.</p></div>
+      <div class="step"><span class="n">5</span>
+        <h3>Videre til nyt scenarie</h3><p>Brugeren ledes tilbage til forsiden og kan vælge et
+        nyt modul eller scenarie.</p></div>
     </div>
   </div>
 </section>
@@ -374,8 +381,6 @@
         <figcaption>Sundhedsplatform og medicinrum</figcaption></figure>
       <figure class="ph"><img src="img/foto_bw.jpg" alt="Sygeplejerske med VR-headset under test på intensivafdelingen">
         <figcaption>Første interne test — Neurointensiv Afdeling</figcaption></figure>
-      <figure class="ph"><img src="img/foto_team_traening.jpg" alt="Træning med VR-headset ved patientsimulator">
-        <figcaption>Simulationstræning med headset og patient</figcaption></figure>
     </div>
   </div>
 </section>
