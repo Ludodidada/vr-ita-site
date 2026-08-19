@@ -124,6 +124,7 @@
   /* ── Video ───────────────────────────── */
   .vid{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
   .vid .frame{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;background:var(--petrol-deep);color:#9fc3d2;flex-direction:column;gap:8px;}
+  .vid .frame iframe{width:100%;height:100%;border:0;display:block;}
   .vid .frame svg{opacity:.85;}
   .vid .frame p{font-size:.85rem;max-width:320px;text-align:center;}
   .vid .cap{padding:14px 18px;font-size:.9rem;font-weight:600;color:var(--petrol-dark);}
@@ -389,21 +390,57 @@
   <div class="wrap">
     <span class="pill">Video</span>
     <h2>Se miljøet i aktion</h2>
-    <p class="lead">Videooptagelser fra headsettet — uploades til YouTube og indlejres her.</p>
+    <p class="lead">Demovideoer optaget direkte fra headsettet. Flere videoer er på vej og
+       tilføjes her løbende.</p>
     <div class="grid g2">
+      <!-- Video 1 -->
       <div class="vid">
         <div class="frame">
-          <svg width="54" height="54" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#9fc3d2" stroke-width="1.5"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="#9fc3d2"/></svg>
-          <p>Pladsholder — indsæt YouTube-embed:<br><code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID"&gt;</code></p>
+          <iframe src="https://www.youtube.com/embed/f644Xd_Rr34" title="VR ITA demovideo 1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
         </div>
-        <div class="cap">Gennemspilning af et fuld skala-scenarie</div>
+        <div class="cap">Demovideo 1</div>
       </div>
+      <!-- Video 2 — pladsholder: erstat frame-indholdet med <iframe src="https://www.youtube.com/embed/VIDEO_ID" ... allowfullscreen></iframe> som i video 1 -->
       <div class="vid">
         <div class="frame">
           <svg width="54" height="54" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#9fc3d2" stroke-width="1.5"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="#9fc3d2"/></svg>
-          <p>Pladsholder — indsæt YouTube-embed:<br><code>&lt;iframe src="https://www.youtube.com/embed/VIDEO_ID"&gt;</code></p>
+          <p>Demovideo på vej</p>
         </div>
-        <div class="cap">Rundvisning i det virtuelle intensivmiljø</div>
+        <div class="cap">Demovideo 2</div>
+      </div>
+      <!-- Video 3 — pladsholder -->
+      <div class="vid">
+        <div class="frame">
+          <svg width="54" height="54" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#9fc3d2" stroke-width="1.5"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="#9fc3d2"/></svg>
+          <p>Demovideo på vej</p>
+        </div>
+        <div class="cap">Demovideo 3</div>
+      </div>
+      <!-- Video 4 — pladsholder -->
+      <div class="vid">
+        <div class="frame">
+          <svg width="54" height="54" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#9fc3d2" stroke-width="1.5"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="#9fc3d2"/></svg>
+          <p>Demovideo på vej</p>
+        </div>
+        <div class="cap">Demovideo 4</div>
+      </div>
+      <!-- Video 5 — pladsholder -->
+      <div class="vid">
+        <div class="frame">
+          <svg width="54" height="54" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#9fc3d2" stroke-width="1.5"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="#9fc3d2"/></svg>
+          <p>Demovideo på vej</p>
+        </div>
+        <div class="cap">Demovideo 5</div>
+      </div>
+      <!-- Video 6 — pladsholder -->
+      <div class="vid">
+        <div class="frame">
+          <svg width="54" height="54" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#9fc3d2" stroke-width="1.5"/><path d="M10 8.5v7l6-3.5-6-3.5z" fill="#9fc3d2"/></svg>
+          <p>Demovideo på vej</p>
+        </div>
+        <div class="cap">Demovideo 6</div>
       </div>
     </div>
   </div>
