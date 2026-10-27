@@ -57,7 +57,7 @@
       "alternateName": "VR ICU",
       "applicationCategory": "EducationalApplication",
       "operatingSystem": "Meta Quest 3",
-      "description": "VR-simulationsplatform til træning af intensiv terapi: respirator, infusionspumper, monitorering, sugeprocedure, Sundhedsplatformen og fuld skala-scenarier med automatisk feedback.",
+      "description": "VR-simulationsplatform til træning af intensiv terapi: respirator, infusionspumper, monitorering, defibrillator (synkroniseret stød og transkutan pacing), luftvejshåndtering, sugeprocedure, EKG-rytmer, Sundhedsplatformen og fuld skala-scenarier med automatisk feedback.",
       "url": "https://vr.sbache.com/",
       "author": {"@id": "https://vr.sbache.com/#soren-bache"}
     }
@@ -146,6 +146,8 @@
   .mod li:last-child{border-bottom:none;}
   .mod li b{display:block;color:var(--petrol-dark);font-size:.92rem;}
   .mod li span{color:var(--muted);font-size:.82rem;}
+  .mod li.next b{color:var(--mint-dark);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;}
+  .mod li.next span{font-style:italic;}
 
   .notice{background:#eaf6f1;border:1px solid #bfe5d6;border-radius:8px;padding:14px 18px;
     font-size:.88rem;color:var(--ink);margin-top:22px;max-width:760px;}
@@ -335,24 +337,27 @@
   <div class="wrap">
     <span class="pill">Moduler og scenarier</span>
     <h2>Hvad indeholder VR ITA i dag?</h2>
-    <p class="lead">Et komplet virtuelt intensivmiljø: patient, monitor, respirator,
-       infusionspumper, medicinrum, sundhedsplatform og DECT-telefon — organiseret i
-       moduler fra VR-kørekort til fuld skala-scenarier.</p>
+    <p class="lead">Et komplet virtuelt intensivmiljø: patient med venflon, CVK og arteriekanyle,
+       monitor, respirator, infusionspumper, defibrillator, medicinrum, sundhedsplatform og
+       DECT-telefon — organiseret i moduler fra VR-kørekort til fuld skala-scenarier.</p>
     <div class="grid g4">
       <div class="mod">
         <header>VR-kørekort</header>
         <ul>
           <li><b>Basal VR</b><span>Navigation og controllers</span></li>
-          <li><b>Medicinrum</b><span>Ordinering og administration</span></li>
+          <li><b>Medicinrum</b><span>Klargør medicin og giv den i venflon eller CVK</span></li>
           <li><b>Sundhedsplatform</b><span>Journal, prøvesvar og bestillinger</span></li>
           <li><b>Kald hjælp</b><span>DECT-telefon og eskalering</span></li>
         </ul>
       </div>
       <div class="mod">
-        <header>Udstyrsmoduler</header>
+        <header>Udstyrstræning</header>
         <ul>
-          <li><b>Respirator</b><span>Isoleret træning i respiratorbehandling</span></li>
           <li><b>Infusionspumper</b><span>Indstilling og justering</span></li>
+          <li><b>Respirator</b><span>Basal respiratorfunktion samt ventilation og kapnografi</span></li>
+          <li><b>Monitorering</b><span>SpO₂, 3-aflednings-EKG, NIBP og arteriekanyle på en nyankommen patient</span></li>
+          <li><b>Defibrillator</b><span>Synkroniseret stød ved atrieflimren og transkutan pacing ved 3. grads AV-blok</span></li>
+          <li class="next"><b>På vej</b><span>Blodsukkerapparat samt I:E-ratio og toptryk på respiratoren</span></li>
         </ul>
       </div>
       <div class="mod">
@@ -360,19 +365,23 @@
         <ul>
           <li><b>Sugeprocedure</b><span>Trin-for-trin med feedback</span></li>
           <li><b>EKG-monitorering</b><span>Basal teori og 12 forskellige rytmer, der skal kunne genkendes</span></li>
+          <li><b>Luftvejshåndtering</b><span>Snorkende patient: hovedkip, kæbeskub, airways og maske-ballon-ventilation</span></li>
+          <li class="next"><b>På vej</b><span>Stuetjek og ABCDE-gennemgang</span></li>
         </ul>
       </div>
       <div class="mod deep">
         <header>Fuld skala-scenarier</header>
         <ul>
-          <li><b>14 scenarier</b><span>Respiratoriske · cirkulatoriske · neurologiske</span></li>
+          <li><b>18 scenarier</b><span>4&nbsp;respiratoriske&nbsp;· 12&nbsp;cirkulatoriske&nbsp;· 2&nbsp;neurologiske</span></li>
+          <li><b>Arytmier</b><span>Tre brady- og tre takykardier — med medicin, pacing og synkroniseret stød</span></li>
           <li><b>2–5 interventioner</b><span>Gennemføres for at stabilisere patientens tilstand</span></li>
-          <li><b>Automatisk evaluering</b><span>Alle handlinger logges og gennemgås i debriefingen</span></li>
+          <li><b>Automatisk evaluering</b><span>Alle handlinger logges med tid — også fejlhandlinger — og gennemgås i debriefingen</span></li>
+          <li class="next"><b>På vej</b><span>Otte nye scenarier — bl.a. lungeemboli, hæmoragisk shock og hypoglykæmi</span></li>
         </ul>
       </div>
     </div>
     <p class="notice">Udstyret i miljøet er tilpasset de intensive afdelinger i
-       <b>Region Hovedstaden</b> (juli 2026). Udgaver tilpasset landets øvrige regioner
+       <b>Region Hovedstaden</b> (oktober 2026). Udgaver tilpasset landets øvrige regioner
        forventes i efteråret 2026.</p>
   </div>
 </section>
@@ -385,7 +394,8 @@
        når det passer ind i vagten. Headsettet ligger klar på afdelingen.</p>
     <div class="grid g5">
       <div class="step"><span class="n">1</span>
-        <h3>Tag headsettet på</h3><p>Brugeren tager headsettet på og åbner appen VR ITA.</p></div>
+        <h3>Tag headsettet på</h3><p>Brugeren tager headsettet på — VR ITA starter af sig selv med en
+        kort introduktion til controllerne.</p></div>
       <div class="step"><span class="n">2</span>
         <h3>Vælg modul</h3><p>Nogle moduler starter med et lille teorioplæg — fuld skala-simulation
         med en sygehistorie. Efter introduktionen trykker man START.</p></div>
@@ -439,6 +449,8 @@
         <figcaption>Respiratoren — indstil RF, VT, FiO₂ og PEEP</figcaption></figure>
       <figure class="ph"><img src="img/vr_pumper.jpg" alt="Virtuelle infusionspumper med propofol, remifentanil og noradrenalin">
         <figcaption>Infusionspumperne — klargør og justér medicin</figcaption></figure>
+      <figure class="ph"><img src="img/vr_defibrillator.jpg" alt="Defibrillatoren tændt i DEFIB med SYNK: atrieflimren med markører på R-takkerne, opladet til 150 J og klar til stød">
+        <figcaption>Defibrillatoren — opladet og klar til synkroniseret stød ved atrieflimren</figcaption></figure>
       <figure class="ph"><img src="img/vr_sundhedsplatform.jpg" alt="Sundhedsplatform og medicinrum i det virtuelle miljø">
         <figcaption>Sundhedsplatform og medicinrum</figcaption></figure>
       <figure class="ph"><img src="img/foto_bw.jpg" alt="Sygeplejerske med VR-headset under test på intensivafdelingen">
